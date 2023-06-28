@@ -5,6 +5,6 @@ export default async function middleware(req: NextRequest) {
     if (url.href.includes("/blog")) {
         const postPath = url.href.split("/blog")
         console.log(postPath)
-        return NextResponse.rewrite(`https://dbredvick4d3f490f3a.wordpress.com${postPath.length >= 1 ? postPath[1] : ""}`)
+        return NextResponse.rewrite(`https://dbredvick4d3f490f3a.wordpress.com${postPath.length >= 1 ? postPath[1] : ""}/`)
     }
 }
