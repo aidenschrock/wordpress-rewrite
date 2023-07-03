@@ -1,0 +1,19 @@
+{
+    "rewrites": [
+        {
+            "source": "/blog",
+            "destination": "https://dbredvick4d3f490f3a.wordpress.com"
+        }
+    ],
+    "headers": [
+        {
+            "source": "/blog",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "s-maxage=2592000, stale-while-revalidate=31536000"
+                }
+            ]
+        }
+    ]
+}
