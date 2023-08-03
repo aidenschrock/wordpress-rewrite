@@ -1,13 +1,13 @@
 {
     "rewrites": [
         {
-            "source": "/blog",
+            "source": "/json-rewrite",
             "destination": "https://dbredvick4d3f490f3a.wordpress.com"
         }
     ],
     "headers": [
         {
-            "source": "/blog",
+            "source": "/json-rewrite",
             "headers": [
                 {
                     "key": "Cache-Control",
