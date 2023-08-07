@@ -8,7 +8,7 @@ export default async function middleware(req: NextRequest) {
         requestHeaders.set('x-hello-from-middleware1', 'hello')
 
         // how do I format below?
-        const response = NextResponse.rewrite({
+        const response = NextResponse.rewrite('https://rewritesonline.wordpress.com/', {
             request: {
                 // New request headers
                 headers: requestHeaders,
@@ -16,7 +16,7 @@ export default async function middleware(req: NextRequest) {
         })
         response.headers.set('x-hello-from-middleware2', 'hello')
 
-        return NextResponse.rewrite('https://rewritesonline.wordpress.com/')
+        return response
     }
 
 
